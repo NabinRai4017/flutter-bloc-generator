@@ -1,0 +1,38 @@
+<idea-plugin>
+  <version>1.0.0</version>
+  <id>com.ckr.blocgenerator</id>
+  <n>Flutter BLoC Generator</n>
+  <vendor email="your-email@example.com" url="https://yourwebsite.com">Your Name</vendor>
+  <description><![CDATA[<h3>Flutter BLoC Pattern Generator</h3>
+        <p>Automatically generate Flutter BLoC pattern files with proper structure.</p>
+        <p><b>Usage:</b> Right-click in your project → "Generate BLoC Pattern"</p>
+        <p><b>Keyboard Shortcut:</b> Ctrl+Alt+B (Cmd+Alt+B on Mac)</p>]]></description>
+  <change-notes><![CDATA[<ul>
+            <li><b>1.0.0</b> - Initial release with Android Studio support</li>
+        </ul>]]></change-notes>
+  <!-- Broad compatibility -->
+  <idea-version since-build="232" until-build="252.*" />
+  <!-- Minimal dependencies -->
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.java</depends>
+  <!-- Actions with multiple placement strategies -->
+  <actions>
+    <!-- Strategy 1: Project View Popup (most common) -->
+    <action id="GenerateBlocProjectAction" class="com.ckr.blocgenerator.GenerateBlocAction" text="Generate BLoC Pattern" description="Generate Flutter BLoC pattern files">
+      <add-to-group group-id="ProjectViewPopupMenu" anchor="first" />
+    </action>
+    <!-- Strategy 2: New Group -->
+    <action id="GenerateBlocNewAction" class="com.ckr.blocgenerator.GenerateBlocAction" text="Generate BLoC Pattern" description="Generate Flutter BLoC pattern files">
+      <add-to-group group-id="NewGroup" anchor="after" relative-to-action="NewFile" />
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt B" />
+    </action>
+    <!-- Strategy 3: Editor Popup -->
+    <action id="GenerateBlocEditorAction" class="com.ckr.blocgenerator.GenerateBlocAction" text="Generate BLoC Pattern" description="Generate Flutter BLoC pattern files">
+      <add-to-group group-id="EditorPopupMenu" anchor="first" />
+    </action>
+    <!-- Strategy 4: Main Menu -->
+    <action id="GenerateBlocMainAction" class="com.ckr.blocgenerator.GenerateBlocAction" text="Generate BLoC Pattern" description="Generate Flutter BLoC pattern files">
+      <add-to-group group-id="ToolsMenu" anchor="first" />
+    </action>
+  </actions>
+</idea-plugin>

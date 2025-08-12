@@ -1,0 +1,19 @@
+<ivy-module version="2.0">
+  <info organisation="bundledPlugin" module="org.intellij.plugins.markdown" revision="252.23892.409+978"/>
+  <configurations>
+    <conf name="default" visibility="public"/>
+  </configurations>
+  <publications>
+    <artifact name="/Users/nabin/.gradle/caches/8.10.2/transforms/4e5977aa9148ae713c55168d41af88e3/transformed/ideaIC-2025.2-aarch64/plugins/markdown" type="directory" conf="default"/>
+  </publications>
+  <dependencies>
+    <dependency org="bundledPlugin" name="org.intellij.intelliLang" rev="252.23892.409+126"/>
+    <dependency org="bundledPlugin" name="org.toml.lang" rev="252.23892.409+277"/>
+    <dependency org="bundledPlugin" name="com.intellij.platform.images" rev="252.23892.409+849"/>
+    <dependency org="bundledModule" name="intellij.json.backend" rev="252.23892.409+973"/>
+    <dependency org="bundledModule" name="intellij.yaml.backend" rev="252.23892.409+973"/>
+    <dependency org="bundledModule" name="intellij.spellchecker" rev="252.23892.409+973"/>
+    <dependency org="bundledModule" name="intellij.platform.compose" rev="252.23892.409+973"/>
+    <dependency org="bundledModule" name="intellij.platform.jewel.markdown.ideLafBridgeStyling" rev="252.23892.409+973"/>
+  </dependencies>
+</ivy-module>

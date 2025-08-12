@@ -1,0 +1,20 @@
+<ivy-module version="2.0">
+  <info organisation="bundledPlugin" module="com.intellij.java" revision="252.23892.409+181"/>
+  <configurations>
+    <conf name="default" visibility="public"/>
+  </configurations>
+  <publications>
+    <artifact name="/Users/nabin/.gradle/caches/8.10.2/transforms/4e5977aa9148ae713c55168d41af88e3/transformed/ideaIC-2025.2-aarch64/plugins/java" type="directory" conf="default"/>
+  </publications>
+  <dependencies>
+    <dependency org="bundledPlugin" name="com.intellij.copyright" rev="252.23892.409+20"/>
+    <dependency org="bundledPlugin" name="com.intellij.platform.images" rev="252.23892.409+849"/>
+    <dependency org="bundledPlugin" name="com.jetbrains.performancePlugin" rev="252.23892.409+307"/>
+    <dependency org="bundledPlugin" name="org.jetbrains.plugins.terminal" rev="252.23892.409+215"/>
+    <dependency org="bundledModule" name="intellij.platform.vcs.impl.lang" rev="252.23892.409+973"/>
+    <dependency org="bundledModule" name="intellij.spellchecker" rev="252.23892.409+973"/>
+    <dependency org="bundledModule" name="intellij.xml.dom.impl" rev="252.23892.409+973"/>
+    <dependency org="bundledModule" name="intellij.platform.kernel.backend" rev="252.23892.409+973"/>
+    <dependency org="bundledModule" name="intellij.platform.collaborationTools" rev="252.23892.409+973"/>
+  </dependencies>
+</ivy-module>
