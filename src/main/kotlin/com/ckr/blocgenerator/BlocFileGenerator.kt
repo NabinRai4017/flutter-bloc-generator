@@ -231,18 +231,18 @@ import 'bloc/${lowerCaseName}_bloc.dart';
 
 class ${pascalCaseName}Screen extends StatelessWidget {
   const ${pascalCaseName}Screen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => ${pascalCaseName}Bloc()..add(const Load${pascalCaseName}Event()),
-      child: const ${pascalCaseName}View(),
-    );
+  
+   static Widget builder(BuildContext context) {
+    final args = ModalRoute.of(context)?.settings.arguments as Map<String, dynamic>?;
+    
+    // TODO: Extract your specific arguments here
+    // Example:
+    // final SomeData someData = args?['data'];
+     return BlocProvider(
+          create: (context) => ${pascalCaseName}Bloc()..add(const Load${pascalCaseName}Event()),
+           child: const ${pascalCaseName}Screen(),
+        );
   }
-}
-
-class ${pascalCaseName}View extends StatelessWidget {
-  const ${pascalCaseName}View({super.key});
 
   @override
   Widget build(BuildContext context) {
